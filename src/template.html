@@ -6,30 +6,89 @@
         <title>To-do</title>
     </head>
     <body>
-        <button type="button" id="addNewTodo">Add</button>
-        <dialog>
-            <h2>Create a new To-do</h2>
-            <p>
-                <label for="Todo-Title">Title: </label>
-                <input type="text" name="Todo-Title" id="Todo-Title" />
-            </p>
-            <p>
-                <label for="Todo-Title">Description: </label>
-                <input type="text" name="Todo-Title" id="Todo-Description" />
-            </p>
-            <p>
-                <label for="Todo-Title">Due Date: </label>
-                <input type="text" name="Todo-Title" id="Todo-DueDate" />
-            </p>
-            <p>
-                <label for="Todo-Title">Priority: </label>
-                <input type="text" name="Todo-Title" id="Todo-Priority" />
-            </p>
-            <p>
-                <button type="button" id="createTodo">Create</button>
-                <br />
-                <button type="button" id="closeTodoCreater">Close</button>
-            </p>
-        </dialog>
+        <div id="container">
+            <div id="side-menu">
+                <div id="menuText-container">
+                    <h3>Menu</h3>
+                    <img src="Images/Icons/menu.svg" alt="menu icon" />
+                </div>
+                <div id="search-container">
+                    <img src="Images/Icons/magnify.svg" alt="search icon" /><input
+                        type="text"
+                        placeholder="Search"
+                    />
+                </div>
+
+                <h5>Tasks</h5>
+                <div id="tasks-container">
+                    <img src="Images/Icons/list-box-outline.svg" alt="Upcoming icon" />
+                    <p>All todos</p>
+                    <img src="Images/Icons/calendar-arrow-right.svg" alt="Upcoming icon" />
+                    <p>Upcoming</p>
+                    <img src="Images/Icons/calendar-today.svg" alt="Today icon" />
+                    <p>Today</p>
+                    <img src="Images/Icons/calendar-month.svg" alt="Calender icon" />
+                    <p>Calender</p>
+                    <img src="Images/Icons/stickynote.svg" alt="Sticky wall icon" />
+                    <p>Sticky wall</p>
+                </div>
+            </div>
+            <div id="main-container">
+                <h1>All todos</h1>
+                <div id="createTodo-container">
+                    <button type="button" id="addNewTodo">+</button>
+                    <h2>Create a new To do</h2>
+                </div>
+
+                <div id="listTodos-container"></div>
+                <div id="listTodosDetails">
+                    <h3>Task:</h3>
+                    <div id="listTodosData">
+                        <h4>Title of todo</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        <div id="listTodosDataCategory">
+                            <p>Category</p>
+                            <span>all today</span>
+                        </div>
+                        <div id="listTodosDataDueDate">
+                            <p>Due Date</p>
+                            <span>2023-11-11</span>
+                        </div>
+                    </div>
+                    <div id="listTodosDetailsChanges-container">
+                        <p>
+                            <button type="button" id="DeleteTodo">Delete</button>
+                        </p>
+                        <p>
+                            <button type="button" id="ChangeTodo">Edit</button>
+                        </p>
+                    </div>
+                </div>
+                <dialog>
+                    <h2>Create a new To-do</h2>
+                    <p>
+                        <label for="Todo-Title">Title: </label>
+                        <input type="text" name="Todo-Title" id="Todo-Title" />
+                    </p>
+                    <p>
+                        <label for="Todo-Title">Description: </label>
+                        <input type="text" name="Todo-Title" id="Todo-Description" />
+                    </p>
+                    <p>
+                        <label for="Todo-Title">Due Date: </label>
+                        <input type="text" name="Todo-Title" id="Todo-DueDate" />
+                    </p>
+                    <p>
+                        <label for="Todo-Title">Priority: </label>
+                        <input type="text" name="Todo-Title" id="Todo-Priority" />
+                    </p>
+                    <p>
+                        <button type="button" id="createTodo">Create</button>
+                        <br />
+                        <button type="button" id="closeTodoCreater">Close</button>
+                    </p>
+                </dialog>
+            </div>
+        </div>
     </body>
 </html>
