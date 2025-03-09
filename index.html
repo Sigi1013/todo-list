@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>To-do</title>
+    <script defer src="main.js"></script></head>
+    <body>
+        <div id="container">
+            <div id="side-menu">
+                <div id="menuText-container">
+                    <h3>Menu</h3>
+                    <img src="2d4061552fac064ed076.svg" alt="menu icon" />
+                </div>
+                <div id="search-container">
+                    <img src="54ff7732bb1a5ff166c6.svg" alt="search icon" /><input
+                        type="text"
+                        placeholder="Search"
+                    />
+                </div>
+
+                <h5>Tasks</h5>
+                <div id="tasks-container">
+                    <img src="69cb22568c04ac01ac23.svg" alt="Upcoming icon" />
+                    <p>All todos</p>
+                    <img src="7d9079d6f2e90d5c2c38.svg" alt="Upcoming icon" />
+                    <p>Upcoming</p>
+                    <img src="233385e32206cd372d69.svg" alt="Today icon" />
+                    <p>Today</p>
+                    <img src="1514cb89e66edd886067.svg" alt="Calender icon" />
+                    <p>Calender</p>
+                    <img src="26605704b674cdb85d01.svg" alt="Sticky wall icon" />
+                    <p>Sticky wall</p>
+                </div>
+            </div>
+            <div id="main-container">
+                <h1>All todos</h1>
+                <div id="createTodo-container">
+                    <button type="button" id="addNewTodo">+</button>
+                    <h2>Create a new To do</h2>
+                </div>
+
+                <div id="listTodos-container"></div>
+                <div id="listTodosDetails">
+                    <h3>Task:</h3>
+                    <div id="listTodosData">
+                        <h4>Title of todo</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        <div id="listTodosDataCategory">
+                            <p>Category</p>
+                            <span>all today</span>
+                        </div>
+                        <div id="listTodosDataDueDate">
+                            <p>Due Date</p>
+                            <span>2023-11-11</span>
+                        </div>
+                    </div>
+                    <div id="listTodosDetailsChanges-container">
+                        <p>
+                            <button type="button" id="DeleteTodo">Delete</button>
+                        </p>
+                        <p>
+                            <button type="button" id="ChangeTodo">Edit</button>
+                        </p>
+                    </div>
+                </div>
+                <dialog>
+                    <h2>Create a new To-do</h2>
+                    <p>
+                        <label for="Todo-Title">Title: </label>
+                        <input type="text" name="Todo-Title" id="Todo-Title" />
+                    </p>
+                    <p>
+                        <label for="Todo-Title">Description: </label>
+                        <input type="text" name="Todo-Title" id="Todo-Description" />
+                    </p>
+                    <p>
+                        <label for="Todo-Title">Due Date: </label>
+                        <input type="text" name="Todo-Title" id="Todo-DueDate" />
+                    </p>
+                    <p>
+                        <label for="Todo-Title">Priority: </label>
+                        <input type="text" name="Todo-Title" id="Todo-Priority" />
+                    </p>
+                    <p>
+                        <button type="button" id="createTodo">Create</button>
+                        <br />
+                        <button type="button" id="closeTodoCreater">Close</button>
+                    </p>
+                </dialog>
+            </div>
+        </div>
+    </body>
+</html>
